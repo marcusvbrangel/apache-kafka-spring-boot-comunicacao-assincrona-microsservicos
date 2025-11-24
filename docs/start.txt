@@ -1,0 +1,31 @@
+
+
+
+./bin/zookeeper-server-start.sh config/zookeeper.properties
+
+./bin/kafka-server-start.sh config/server.properties
+
+
+https://kafka.apache.org/
+
+
+
+Index of /kafka/3.9.1
+https://downloads.apache.org/kafka/3.9.1/?utm_source=chatgpt.com
+
+
+
+
+tar -xzf kafka_2.13-4.1.1.tgz
+
+cd kafka_2.13-4.1.1
+
+
+
+
+
+
+
+
+
+
