@@ -1,4 +1,4 @@
-package com.store.shop_api.constants;
+package com.store.shopapi.constants;
 
 public enum ShopStatus {
 

@@ -1,6 +1,6 @@
-package com.store.shop_api.model;
+package com.store.shopapi.model;
 
-import com.store.shop_api.dto.ShopDTO;
+import com.store.shopapi.dto.ShopDTO;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;

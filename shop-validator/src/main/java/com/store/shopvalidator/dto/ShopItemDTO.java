@@ -1,6 +1,6 @@
-package com.store.shop_api.dto;
+package com.store.shopvalidator.dto;
 
-import com.store.shop_api.model.ShopItem;
+import com.store.shopvalidator.model.ShopItem;
 import lombok.Getter;
 import lombok.Setter;
 

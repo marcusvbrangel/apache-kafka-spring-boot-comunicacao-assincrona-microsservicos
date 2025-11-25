@@ -1,6 +1,6 @@
-package com.store.shop_api.repository;
+package com.store.shopvalidator.repository;
 
-import com.store.shop_api.model.Shop;
+import com.store.shopvalidator.model.Shop;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

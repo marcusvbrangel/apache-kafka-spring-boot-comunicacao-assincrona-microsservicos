@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/apache-kafka-spring-boot-comunicacao-assincrona-microsservicos.iml" filepath="$PROJECT_DIR$/.idea/apache-kafka-spring-boot-comunicacao-assincrona-microsservicos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/shop-validator.iml" filepath="$PROJECT_DIR$/.idea/shop-validator.iml" />
     </modules>
   </component>
 </project>
