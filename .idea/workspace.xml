@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="873c533b-da4f-468b-843e-77ea4e2cfb5b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.ask.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shopapi/ShopApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shop/ShopApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shopapi/constants/ShopStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shop/constants/ShopStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shopapi/controller/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shop/controller/ShopController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shopapi/dto/ShopDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shop/dto/ShopDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shopapi/dto/ShopItemDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shop/dto/ShopItemDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shopapi/events/KafkaClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shop/events/KafkaClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shopapi/events/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shop/events/KafkaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shopapi/model/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shop/model/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shopapi/model/ShopItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shop/model/ShopItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shopapi/repository/ShopRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shop/repository/ShopRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/src/test/java/com/store/shopapi/ShopApiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/src/test/java/com/store/shop/ShopApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-validator/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-validator/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-validator/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-validator/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-validator/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-validator/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-validator/src/main/java/com/store/shopvalidator/ShopApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/ValidatorApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-validator/src/main/java/com/store/shopvalidator/constants/ShopStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/constants/ShopStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-validator/src/main/java/com/store/shopvalidator/controller/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/controller/ShopController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-validator/src/main/java/com/store/shopvalidator/dto/ShopDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/dto/ShopDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-validator/src/main/java/com/store/shopvalidator/dto/ShopItemDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/dto/ShopItemDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-validator/src/main/java/com/store/shopvalidator/events/KafkaClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/events/KafkaClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-validator/src/main/java/com/store/shopvalidator/events/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/events/KafkaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-validator/src/main/java/com/store/shopvalidator/model/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/model/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-validator/src/main/java/com/store/shopvalidator/model/ShopItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/model/ShopItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-validator/src/main/java/com/store/shopvalidator/repository/ShopRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/repository/ShopRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-validator/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-validator/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-validator/src/test/java/com/store/shop_api/ShopApiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/test/java/com/store/validator/ValidatorApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="35wGkLfbpq9ktnqvvg2yuifUInz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.ShopApiApplication.executor": "Run",
+    "Application.ShopApplication.executor": "Debug",
+    "Application.ShopValidatorApplication.executor": "Debug",
+    "JUnit.ValidatorApplicationTests.executor": "Debug",
+    "Maven.shop-api [clean].executor": "Run",
+    "Maven.shop-api [compile].executor": "Run",
+    "Maven.shop-api [deploy].executor": "Run",
+    "Maven.shop-api [install].executor": "Run",
+    "Maven.shop-api [package].executor": "Run",
+    "Maven.shop-api [test].executor": "Run",
+    "Maven.shop-api [validate].executor": "Run",
+    "Maven.shop-api [verify].executor": "Run",
+    "Maven.shop-validator [clean].executor": "Run",
+    "Maven.shop-validator [compile].executor": "Run",
+    "Maven.shop-validator [install].executor": "Run",
+    "Maven.shop-validator [package].executor": "Run",
+    "Maven.shop-validator [test].executor": "Run",
+    "Maven.shop-validator [validate].executor": "Run",
+    "Maven.shop-validator [verify].executor": "Run",
+    "Maven.validator-api [clean].executor": "Run",
+    "Maven.validator-api [compile].executor": "Run",
+    "Maven.validator-api [install].executor": "Run",
+    "Maven.validator-api [package].executor": "Run",
+    "Maven.validator-api [test].executor": "Run",
+    "Maven.validator-api [validate].executor": "Run",
+    "Maven.validator-api [verify].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/wolf/Documentos/desenvolvimento/casa-do-codigo/apache-kafka-spring-boot-comunicacao-assincrona-microsservicos/validator-api/pom.xml",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ValidatorApplication">
+    <configuration name="ShopApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.store.shop.ShopApplication" />
+      <module name="shop-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.store.shop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ValidatorApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.store.validator.ValidatorApplication" />
+      <module name="validator-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.store.validator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ValidatorApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="validator-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.store.validator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.store.validator" />
+      <option name="MAIN_CLASS_NAME" value="com.store.validator.ValidatorApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ValidatorApplication" />
+        <item itemvalue="Application.ShopApplication" />
+        <item itemvalue="JUnit.ValidatorApplicationTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="873c533b-da4f-468b-843e-77ea4e2cfb5b" name="Changes" comment="" />
+      <created>1764013865722</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1764013865722</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
