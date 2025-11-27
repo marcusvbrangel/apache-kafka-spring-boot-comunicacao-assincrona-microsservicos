@@ -24,7 +24,7 @@ import org.springframework.kafka.support.serializer.JsonSerializer;
 @Configuration
 public class KafkaConfig {
 
-    @Value(value = "${kafka.bootstrapAddress:kafka:9092}")
+    @Value(value = "${kafka.bootstrap.address}")
     private String bootstrapAddress;
 
     public ProducerFactory<String, ShopDTO> producerFactory() {

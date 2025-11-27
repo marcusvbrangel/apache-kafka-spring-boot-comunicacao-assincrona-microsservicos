@@ -5,19 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="873c533b-da4f-468b-843e-77ea4e2cfb5b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/events/ReceiveKafkaMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/validator-api/src/main/resources/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/kafka-commands.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shop/events/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shop/events/KafkaConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/controller/ShopController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/dto/ShopDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/dto/ShopDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/dto/ShopItemDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/dto/ShopItemDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/events/KafkaClient.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/events/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/events/KafkaConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/model/Shop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/model/ShopItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/repository/ShopRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/ValidatorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/shop/ValidatorApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/constants/ShopStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/dto/ShopDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/shop/dto/ShopDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/dto/ShopItemDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/shop/dto/ShopItemDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/events/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/shop/events/KafkaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/events/ReceiveKafkaMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/shop/events/ReceiveKafkaMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/shop/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/shop/repository/ProductRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/validator-api/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/src/test/java/com/store/validator/ValidatorApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/test/java/com/store/shop/ValidatorApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,18 +36,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "marcusvbrangel"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;marcusvbrangel&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/marcusvbrangel/apache-kafka-spring-boot-comunicacao-assincrona-microsservicos.git",
-    "accountId": "76e7e0d5-3efc-428d-b9a4-73f5832cd914"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/marcusvbrangel/apache-kafka-spring-boot-comunicacao-assincrona-microsservicos.git&quot;,
+    &quot;accountId&quot;: &quot;76e7e0d5-3efc-428d-b9a4-73f5832cd914&quot;
   }
-}]]></component>
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -63,49 +63,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Application.ShopApiApplication.executor": "Run",
-    "Application.ShopApplication.executor": "Debug",
-    "Application.ShopValidatorApplication.executor": "Debug",
-    "Application.ValidatorApplication.executor": "Debug",
-    "JUnit.ValidatorApplicationTests.executor": "Debug",
-    "Maven.shop-api [clean].executor": "Run",
-    "Maven.shop-api [compile].executor": "Run",
-    "Maven.shop-api [deploy].executor": "Run",
-    "Maven.shop-api [install].executor": "Run",
-    "Maven.shop-api [package].executor": "Run",
-    "Maven.shop-api [test].executor": "Run",
-    "Maven.shop-api [validate].executor": "Run",
-    "Maven.shop-api [verify].executor": "Run",
-    "Maven.shop-validator [clean].executor": "Run",
-    "Maven.shop-validator [compile].executor": "Run",
-    "Maven.shop-validator [install].executor": "Run",
-    "Maven.shop-validator [package].executor": "Run",
-    "Maven.shop-validator [test].executor": "Run",
-    "Maven.shop-validator [validate].executor": "Run",
-    "Maven.shop-validator [verify].executor": "Run",
-    "Maven.validator-api [clean].executor": "Run",
-    "Maven.validator-api [compile].executor": "Run",
-    "Maven.validator-api [install].executor": "Run",
-    "Maven.validator-api [package].executor": "Run",
-    "Maven.validator-api [test].executor": "Run",
-    "Maven.validator-api [validate].executor": "Run",
-    "Maven.validator-api [verify].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/wolf/Documentos/desenvolvimento/casa-do-codigo/apache-kafka-spring-boot-comunicacao-assincrona-microsservicos/validator-api/pom.xml",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.ShopApiApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ShopApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.ShopValidatorApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.ValidatorApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.ValidatorApplicationTests.executor&quot;: &quot;Debug&quot;,
+    &quot;Maven.shop-api [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.shop-api [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.shop-api [deploy].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.shop-api [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.shop-api [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.shop-api [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.shop-api [validate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.shop-api [verify].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.shop-validator [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.shop-validator [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.shop-validator [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.shop-validator [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.shop-validator [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.shop-validator [validate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.shop-validator [verify].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.validator-api [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.validator-api [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.validator-api [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.validator-api [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.validator-api [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.validator-api [validate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.validator-api [verify].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/wolf/Documentos/desenvolvimento/casa-do-codigo/apache-kafka-spring-boot-comunicacao-assincrona-microsservicos/validator-api/pom.xml&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/docs" />
@@ -126,11 +126,11 @@
       </method>
     </configuration>
     <configuration name="ValidatorApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.store.validator.ValidatorApplication" />
+      <option name="MAIN_CLASS_NAME" value="com.store.shop.ValidatorApplication" />
       <module name="validator-api" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.store.validator.*" />
+          <option name="PATTERN" value="com.store.shop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

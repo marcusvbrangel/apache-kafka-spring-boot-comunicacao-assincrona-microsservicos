@@ -1,9 +1,9 @@
-package com.store.validator.events;
+package com.store.shop.events;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import com.store.validator.dto.ShopDTO;
+import com.store.shop.dto.ShopDTO;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;

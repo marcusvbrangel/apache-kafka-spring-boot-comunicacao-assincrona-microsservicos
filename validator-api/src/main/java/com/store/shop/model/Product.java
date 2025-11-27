@@ -1,4 +1,4 @@
-package com.store.validator.model;
+package com.store.shop.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -13,11 +13,8 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "product_identifier")
-    private String productIdentifier;
+    private String identifier;
 
     private Integer amount;
-
-    private Float price;
 
 }

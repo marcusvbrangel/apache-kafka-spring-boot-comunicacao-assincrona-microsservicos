@@ -1,0 +1,124 @@
+
+
+./bin/zookeeper-server-start.sh config/zookeeper.properties
+
+./bin/kafka-server-start.sh config/server.properties
+
+
+./bin/kafka-topics.sh \
+--create \
+--topic topico-teste \
+--bootstrap-server localhost:9092
+
+
+./bin/kafka-topics.sh \
+--list \
+--bootstrap-server localhost:9092
+
+
+./bin/kafka-topics.sh \
+--describe \
+--topic topico-teste \
+--bootstrap-server localhost:9092
+
+
+./bin/kafka-console-producer.sh \
+--topic topico-teste \
+--bootstrap-server localhost:9092
+
+
+./bin/kafka-console-consumer.sh \
+--topic topico-teste \
+--bootstrap-server localhost:9092
+
+
+./bin/kafka-console-consumer.sh \
+--topic topico-teste \
+--from-beginning \
+--bootstrap-server localhost:9092
+
+
+./bin/kafka-console-consumer.sh \
+--topic topico-teste \
+--from-beginning \
+--bootstrap-server localhost:9092 \
+--consumer-property group.id=grupo-1
+
+
+./bin/kafka-console-consumer.sh \
+--topic topico-teste \
+--from-beginning \
+--bootstrap-server localhost:9092 \
+--consumer-property group.id=grupo-2
+
+
+./bin/kafka-consumer-groups.sh \
+--bootstrap-server localhost:9092 \
+--list
+
+
+-----------------------------------------------------
+
+
+./bin/kafka-console-consumer.sh \
+--topic SHOP_TOPIC_EVENT \
+--bootstrap-server localhost:9092
+
+
+-----------------------------------------------------
+
+
+
+-----------------------------------------------------
+
+
+
+-----------------------------------------------------
+
+
+
+-----------------------------------------------------
+
+
+
+
+-----------------------------------------------------
+
+
+
+
+-----------------------------------------------------
+
+
+-----------------------------------------------------
+
+
+
+-----------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

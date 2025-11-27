@@ -1,4 +1,4 @@
-package com.store.validator.dto;
+package com.store.shop.dto;
 
 import lombok.Getter;
 import lombok.Setter;

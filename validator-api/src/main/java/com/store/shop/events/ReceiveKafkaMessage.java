@@ -1,9 +1,9 @@
-package com.store.validator.events;
+package com.store.shop.events;
 
-import com.store.validator.dto.ShopDTO;
-import com.store.validator.dto.ShopItemDTO;
-import com.store.validator.model.Product;
-import com.store.validator.repository.ProductRepository;
+import com.store.shop.dto.ShopDTO;
+import com.store.shop.dto.ShopItemDTO;
+import com.store.shop.model.Product;
+import com.store.shop.repository.ProductRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.core.KafkaTemplate;
@@ -37,7 +37,7 @@ public class ReceiveKafkaMessage {
 
             for (ShopItemDTO item : shopDTO.getItems()) {
 
-                Product product = productRepository.findByProductIdentifier(item.getProductIdentifier());
+                Product product = productRepository.findByIdentifier(item.getProductIdentifier());
 
                 if (!isValidShop(item, product)) {
                     shopError(shopDTO);
