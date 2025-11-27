@@ -5,19 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="873c533b-da4f-468b-843e-77ea4e2cfb5b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/kafka-commands.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shop/events/ReceiveKafkaMessage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shop/events/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shop/events/KafkaConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/ValidatorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/shop/ValidatorApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/constants/ShopStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/dto/ShopDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/shop/dto/ShopDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/dto/ShopItemDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/shop/dto/ShopItemDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/events/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/shop/events/KafkaConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/events/ReceiveKafkaMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/shop/events/ReceiveKafkaMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/shop/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validator-api/src/main/java/com/store/validator/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/shop/repository/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validator-api/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/resources/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validator-api/src/test/java/com/store/validator/ValidatorApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/test/java/com/store/shop/ValidatorApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shop/repository/ShopRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shop/repository/ShopRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
