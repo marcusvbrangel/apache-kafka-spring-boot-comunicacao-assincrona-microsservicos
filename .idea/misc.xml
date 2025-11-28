@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/shop-api/pom.xml" />
         <option value="$PROJECT_DIR$/shop-validator/pom.xml" />
         <option value="$PROJECT_DIR$/validator-api/pom.xml" />
+        <option value="$PROJECT_DIR$/report-api/pom.xml" />
       </list>
     </option>
   </component>
