@@ -1,0 +1,7 @@
+com/store/shop/dto/ShopDTO.class
+com/store/shop/model/Product.class
+com/store/shop/dto/ShopItemDTO.class
+com/store/shop/repository/ProductRepository.class
+com/store/shop/ValidatorApplication.class
+com/store/shop/events/ReceiveKafkaMessage.class
+com/store/shop/events/KafkaConfig.class

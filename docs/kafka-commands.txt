@@ -1,8 +1,15 @@
 
+PS1="\W ❯ "
 
 ./bin/zookeeper-server-start.sh config/zookeeper.properties
 
 ./bin/kafka-server-start.sh config/server.properties
+
+docker run -d --network host -p 9000:8080 -e KAFKA_BROKERS=localhost:9092 docker.redpanda.com/redpandadata/console:latest
+
+
+-----------------------------------------
+
 
 
 ./bin/kafka-topics.sh \

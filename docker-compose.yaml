@@ -1,87 +1,53 @@
+version: '3.8'
 
 services:
 
   zookeeper:
-    image: confluentinc/cp-zookeeper:7.6.0
+    image: confluentinc/cp-zookeeper:7.5.0
     container_name: zookeeper
-    ports:
-      - "2181:2181"
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
       ZOOKEEPER_TICK_TIME: 2000
-    volumes:
-      - zk_data:/var/lib/zookeeper/data
-      - zk_logs:/var/lib/zookeeper/log
+    ports:
+      - "2181:2181"
     networks:
-      - kafka-net
+      - kafka-network
+    healthcheck:
+      test: ["CMD", "echo", "ruok", "|", "nc", "localhost", "2181"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
   kafka:
-    image: confluentinc/cp-kafka:7.6.0
+    image: confluentinc/cp-kafka:7.5.0
     container_name: kafka
     depends_on:
-      - zookeeper
+      zookeeper:
+        condition: service_healthy
     ports:
       - "9092:9092"
     environment:
-      # ID do broker (apenas 1 para desenvolvimento)
       KAFKA_BROKER_ID: 1
-
-      # Conexão com o ZooKeeper
-      KAFKA_ZOOKEEPER_CONNECT: "zookeeper:2181"
-
-      # Listeners simples (dev-friendly)
-      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT
-
-      # Auto criação de tópicos (melhor para dev)
-      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
-      # ----- Tópicos pré-criados -----
-
-      KAFKA_CREATE_TOPICS: "orders:3:1,payments:3:1,inventory:3:1"
-
-      # Retenção básica (sem exagero)
-      KAFKA_LOG_RETENTION_HOURS: 24
-
-      # Para desenvolvimento: sem ACLs, sem SASL, sem segurança
-      KAFKA_ALLOW_EVERYONE_IF_NO_ACL_FOUND: "true"
-
-    volumes:
-      - kafka_data:/var/lib/kafka/data
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
     networks:
-      - kafka-net
+      - kafka-network
 
-  # UI moderna e rápida para Kafka
   redpanda-console:
     image: redpandadata/console:latest
     container_name: redpanda-console
     depends_on:
       - kafka
     ports:
-      - "8080:8080"
+      - "8089:8080"
     environment:
-      # Conecta direto no Kafka sem autenticação
       KAFKA_BROKERS: "kafka:9092"
     networks:
-      - kafka-net
+      - kafka-network
 
-# -------------------------
-# VOLUMES PERSISTENTES
-# -------------------------
-volumes:
-  kafka_data:
-  # Local no host:
-  #   /var/lib/docker/volumes/kafka_data/_data
-  zk_data:
-  # Local no host:
-  #   /var/lib/docker/volumes/zk_data/_data
-  zk_logs:
-  # Local no host:
-  #   /var/lib/docker/volumes/zk_logs/_data
-
-# -------------------------
-# REDE DEDICADA
-# -------------------------
 networks:
-  kafka-net:
+  kafka-network:
     driver: bridge

@@ -1,0 +1,7 @@
+/home/wolf/Documentos/desenvolvimento/casa-do-codigo/apache-kafka-spring-boot-comunicacao-assincrona-microsservicos/validator-api/src/main/java/com/store/shop/ValidatorApplication.java
+/home/wolf/Documentos/desenvolvimento/casa-do-codigo/apache-kafka-spring-boot-comunicacao-assincrona-microsservicos/validator-api/src/main/java/com/store/shop/dto/ShopDTO.java
+/home/wolf/Documentos/desenvolvimento/casa-do-codigo/apache-kafka-spring-boot-comunicacao-assincrona-microsservicos/validator-api/src/main/java/com/store/shop/dto/ShopItemDTO.java
+/home/wolf/Documentos/desenvolvimento/casa-do-codigo/apache-kafka-spring-boot-comunicacao-assincrona-microsservicos/validator-api/src/main/java/com/store/shop/events/KafkaConfig.java
+/home/wolf/Documentos/desenvolvimento/casa-do-codigo/apache-kafka-spring-boot-comunicacao-assincrona-microsservicos/validator-api/src/main/java/com/store/shop/events/ReceiveKafkaMessage.java
+/home/wolf/Documentos/desenvolvimento/casa-do-codigo/apache-kafka-spring-boot-comunicacao-assincrona-microsservicos/validator-api/src/main/java/com/store/shop/model/Product.java
+/home/wolf/Documentos/desenvolvimento/casa-do-codigo/apache-kafka-spring-boot-comunicacao-assincrona-microsservicos/validator-api/src/main/java/com/store/shop/repository/ProductRepository.java
