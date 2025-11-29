@@ -26,7 +26,7 @@ public class ReceiveKafkaMessage {
         this.kafkaTemplate = kafkaTemplate;
     }
 
-    @KafkaListener(topics = SHOP_TOPIC_NAME, groupId = "group")
+    @KafkaListener(topics = SHOP_TOPIC_NAME, groupId = "validation-validate-shop-group")
     public void listenShopTopic(ShopDTO shopDTO) {
 
         try {

@@ -19,7 +19,7 @@ public class ReceiveKafkaMessage {
         this.shopRepository = shopRepository;
     }
 
-    @KafkaListener(topics = SHOP_TOPIC_EVENT_NAME, groupId = "group")
+    @KafkaListener(topics = SHOP_TOPIC_EVENT_NAME, groupId = "shop-save-status-group")
     public void listenShopEvents(ShopDTO shopDTO) {
 
         try {

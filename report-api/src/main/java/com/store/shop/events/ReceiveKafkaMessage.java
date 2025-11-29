@@ -20,7 +20,7 @@ public class ReceiveKafkaMessage {
     }
 
     @Transactional
-    @KafkaListener(topics = SHOP_TOPIC_EVENT_NAME, groupId = "group_report")
+    @KafkaListener(topics = SHOP_TOPIC_EVENT_NAME, groupId = "report-update-report-group")
     public void listenShopTopic(ShopDTO shopDTO) {
 
         try {

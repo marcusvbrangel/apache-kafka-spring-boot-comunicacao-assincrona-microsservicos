@@ -32,7 +32,7 @@ public class KafkaConfig {
         props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, JsonSerializer.class);
         props.put(ProducerConfig.BATCH_SIZE_CONFIG, "100");
-        props.put(ProducerConfig.CLIENT_ID_CONFIG, "client-1");
+        props.put(ProducerConfig.CLIENT_ID_CONFIG, "validator-api");
         props.put(ProducerConfig.CONNECTIONS_MAX_IDLE_MS_CONFIG, 10000);
         return new DefaultKafkaProducerFactory<>(props);
     }

@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="873c533b-da4f-468b-843e-77ea4e2cfb5b" name="Changes" comment="">
+    <list default="true" id="873c533b-da4f-468b-843e-77ea4e2cfb5b" name="Changes" comment="fix: fixed a bug on docker-compose.yaml, related to redpanda console">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-api/src/main/java/com/store/shop/events/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/report-api/src/main/java/com/store/shop/events/KafkaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-api/src/main/java/com/store/shop/events/ReceiveKafkaMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/report-api/src/main/java/com/store/shop/events/ReceiveKafkaMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shop/events/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shop/events/KafkaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shop/events/ReceiveKafkaMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shop/events/ReceiveKafkaMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/src/main/java/com/store/shop/events/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/shop/events/KafkaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/src/main/java/com/store/shop/events/ReceiveKafkaMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/shop/events/ReceiveKafkaMessage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +116,7 @@
       <recent name="$PROJECT_DIR$/docs" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ValidatorApplication">
+  <component name="RunManager" selected="Application.ShopApplication">
     <configuration name="ReportApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.store.shop.ReportApplication" />
       <module name="report-api" />
@@ -194,9 +200,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ShopApplication" />
         <item itemvalue="Application.ValidatorApplication" />
         <item itemvalue="Application.ReportApplication" />
-        <item itemvalue="Application.ShopApplication" />
         <item itemvalue="Docker.docker-compose.yaml.redpanda-console: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
       </list>
@@ -210,7 +216,20 @@
       <option name="presentableId" value="Default" />
       <updated>1764013865722</updated>
     </task>
+    <task id="LOCAL-00001" summary="fix: fixed a bug on docker-compose.yaml, related to redpanda console">
+      <option name="closed" value="true" />
+      <created>1764449218365</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764449218365</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix: fixed a bug on docker-compose.yaml, related to redpanda console" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: fixed a bug on docker-compose.yaml, related to redpanda console" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
