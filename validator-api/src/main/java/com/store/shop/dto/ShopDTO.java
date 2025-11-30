@@ -14,6 +14,7 @@ public class ShopDTO {
     private String identifier;
     private LocalDateTime dateShop;
     private String status;
+    private String buyerIdentifier;
     private List<ShopItemDTO> items = new  ArrayList<>();
 
 }

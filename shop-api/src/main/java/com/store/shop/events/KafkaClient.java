@@ -26,9 +26,10 @@ public class KafkaClient {
 
             Message<ShopDTO> message = MessageBuilder
                     .withPayload(shopDTO)
-                    .setHeader("source", "shop-api")
-                    .setHeader(KafkaHeaders.TOPIC, SHOP_TOPIC_NAME)
-                    .setHeader(KafkaHeaders.TIMESTAMP, System.currentTimeMillis())
+                    .setHeader(KafkaHeaders.KEY, shopDTO.getBuyerIdentifier())   // garantia que mensagens com a mesma key vao para a mesma particao...
+                    .setHeader("source", "shop-api")   // identificacao da origem da mensagem...
+                    .setHeader(KafkaHeaders.TOPIC, SHOP_TOPIC_NAME)   // rastreabilidade...
+                    .setHeader(KafkaHeaders.TIMESTAMP, System.currentTimeMillis())   // rastreabilidade...
                     .build();
 
             // kafkaTemplate.send(SHOP_TOPIC_NAME, shopDTO);

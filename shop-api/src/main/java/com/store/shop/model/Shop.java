@@ -35,6 +35,7 @@ public class Shop {
         shop.setIdentifier(shopDTO.getIdentifier());
         shop.setStatus(shopDTO.getStatus());
         shop.setDateShop(shopDTO.getDateShop());
+        shop.setBuyerIdentifier(shopDTO.getBuyerIdentifier());
         shop.setItems(shopDTO
                 .getItems()
                 .stream()

@@ -10,6 +10,7 @@ import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.Acknowledgment;
 import org.springframework.kafka.support.KafkaHeaders;
 import org.springframework.messaging.Message;
+import org.springframework.messaging.handler.annotation.Header;
 import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.stereotype.Service;
 
@@ -31,11 +32,23 @@ public class ReceiveKafkaMessage {
     }
 
     @KafkaListener(topics = SHOP_TOPIC_NAME, groupId = "validation-validate-shop-group")
-    public void listenShopTopic(ShopDTO shopDTO, Acknowledgment acknowledgment) {
+    public void listenShopTopic(ShopDTO shopDTO,
+                                Acknowledgment acknowledgment,
+                                @Header(name = KafkaHeaders.RECEIVED_KEY, required = false) String key,
+                                @Header(name = KafkaHeaders.RECEIVED_TOPIC, required = false) String topic,
+                                @Header(name = KafkaHeaders.RECEIVED_PARTITION, required = false) Integer partitionId,
+                                @Header(name = KafkaHeaders.RECEIVED_TIMESTAMP, required = false) Long timeStamp
+    ) {
 
         try {
 
-            log.info("Compra recebida no tópico: {}", shopDTO.getIdentifier());
+            log.info("-----------------------------------------------");
+            log.info("Compra recebida");
+            log.info("key: {}", key);
+            log.info("topic: {}", topic);
+            log.info("partitionId: {}", partitionId);
+            log.info("timeStamp: {}", timeStamp);
+            log.info("-----------------------------------------------");
 
             boolean success = true;
 
