@@ -4,7 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="873c533b-da4f-468b-843e-77ea4e2cfb5b" name="Changes" comment="refactor: fixed a bug on docker-compose.yaml, related to redpanda console" />
+    <list default="true" id="873c533b-da4f-468b-843e-77ea4e2cfb5b" name="Changes" comment="refactor: fixed a bug on docker-compose.yaml, related to redpanda console">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-api/src/main/java/com/store/shop/events/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/report-api/src/main/java/com/store/shop/events/KafkaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-api/src/main/java/com/store/shop/events/ReceiveKafkaMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/report-api/src/main/java/com/store/shop/events/ReceiveKafkaMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/report-api/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-api/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/report-api/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-api/target/classes/com/store/shop/events/ReceiveKafkaMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/report-api/target/classes/com/store/shop/events/ReceiveKafkaMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-api/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-api/target/report-api-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-api/target/report-api-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-api/target/surefire-reports/TEST-com.store.shop.ShopApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-api/target/surefire-reports/com.store.shop.ShopApplicationTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-api/target/test-classes/com/store/shop/ShopApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shop/events/KafkaClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shop/events/KafkaClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shop/events/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shop/events/KafkaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shop/events/ReceiveKafkaMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shop/events/ReceiveKafkaMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/target/classes/com/store/shop/events/KafkaClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/target/classes/com/store/shop/events/KafkaClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/target/classes/com/store/shop/events/ReceiveKafkaMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/target/classes/com/store/shop/events/ReceiveKafkaMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/src/main/java/com/store/shop/events/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/shop/events/KafkaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/src/main/java/com/store/shop/events/ReceiveKafkaMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/java/com/store/shop/events/ReceiveKafkaMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/target/classes/com/store/shop/events/ReceiveKafkaMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/target/classes/com/store/shop/events/ReceiveKafkaMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/target/test-classes/com/store/shop/ValidatorApplicationTests.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,59 +84,61 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Application.ReportApplication.executor": "Debug",
-    "Application.ShopApiApplication.executor": "Run",
-    "Application.ShopApplication.executor": "Debug",
-    "Application.ShopValidatorApplication.executor": "Debug",
-    "Application.ValidatorApplication.executor": "Debug",
-    "Docker.docker-compose.yaml.redpanda-console: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yaml: Compose Deployment.executor": "Run",
-    "JUnit.ValidatorApplicationTests.executor": "Debug",
-    "Maven.report-api [clean].executor": "Run",
-    "Maven.report-api [compile].executor": "Run",
-    "Maven.report-api [install].executor": "Run",
-    "Maven.report-api [package].executor": "Run",
-    "Maven.report-api [test].executor": "Run",
-    "Maven.report-api [validate].executor": "Run",
-    "Maven.report-api [verify].executor": "Run",
-    "Maven.shop-api [clean].executor": "Run",
-    "Maven.shop-api [compile].executor": "Run",
-    "Maven.shop-api [deploy].executor": "Run",
-    "Maven.shop-api [install].executor": "Run",
-    "Maven.shop-api [package].executor": "Run",
-    "Maven.shop-api [test].executor": "Run",
-    "Maven.shop-api [validate].executor": "Run",
-    "Maven.shop-api [verify].executor": "Run",
-    "Maven.shop-validator [clean].executor": "Run",
-    "Maven.shop-validator [compile].executor": "Run",
-    "Maven.shop-validator [install].executor": "Run",
-    "Maven.shop-validator [package].executor": "Run",
-    "Maven.shop-validator [test].executor": "Run",
-    "Maven.shop-validator [validate].executor": "Run",
-    "Maven.shop-validator [verify].executor": "Run",
-    "Maven.validator-api [clean].executor": "Run",
-    "Maven.validator-api [compile].executor": "Run",
-    "Maven.validator-api [install].executor": "Run",
-    "Maven.validator-api [package].executor": "Run",
-    "Maven.validator-api [test].executor": "Run",
-    "Maven.validator-api [validate].executor": "Run",
-    "Maven.validator-api [verify].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/wolf/Documentos/desenvolvimento/casa-do-codigo/apache-kafka-spring-boot-comunicacao-assincrona-microsservicos/report-api/pom.xml",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.ReportApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.ShopApiApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ShopApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.ShopValidatorApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.ValidatorApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.ValidatorApplication02.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.ValidatorApplication03.executor&quot;: &quot;Debug&quot;,
+    &quot;Docker.docker-compose.yaml.redpanda-console: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yaml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ValidatorApplicationTests.executor&quot;: &quot;Debug&quot;,
+    &quot;Maven.report-api [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.report-api [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.report-api [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.report-api [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.report-api [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.report-api [validate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.report-api [verify].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.shop-api [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.shop-api [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.shop-api [deploy].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.shop-api [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.shop-api [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.shop-api [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.shop-api [validate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.shop-api [verify].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.shop-validator [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.shop-validator [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.shop-validator [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.shop-validator [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.shop-validator [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.shop-validator [validate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.shop-validator [verify].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.validator-api [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.validator-api [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.validator-api [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.validator-api [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.validator-api [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.validator-api [validate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.validator-api [verify].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/wolf/Documentos/desenvolvimento/casa-do-codigo/apache-kafka-spring-boot-comunicacao-assincrona-microsservicos/report-api/pom.xml&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/docs" />
@@ -147,8 +184,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="kljjl" type="Application" factoryName="Application" singleton="false">
-      <module name="validator-api" />
+    <configuration name="ValidatorApplication02" type="Application" factoryName="Application">
+      <envs>
+        <env name="SERVER_PORT" value="8062" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="com.store.shop.ValidatorApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ValidatorApplication03" type="Application" factoryName="Application">
+      <envs>
+        <env name="SERVER_PORT" value="8072" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="com.store.shop.ValidatorApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -189,6 +238,15 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.ValidatorApplication02" />
+      <item itemvalue="Application.ValidatorApplication03" />
+      <item itemvalue="Application.ReportApplication" />
+      <item itemvalue="Application.ShopApplication" />
+      <item itemvalue="Application.ValidatorApplication" />
+      <item itemvalue="Docker.docker-compose.yaml.redpanda-console: Compose Deployment" />
+      <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.ShopApplication" />
@@ -223,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764456832993</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="refactor: fixed a bug on docker-compose.yaml, related to redpanda console">
+      <option name="closed" value="true" />
+      <created>1764456840099</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1764456840099</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

@@ -5,6 +5,7 @@ import com.store.shop.repository.ReportRepository;
 import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.kafka.support.Acknowledgment;
 import org.springframework.stereotype.Service;
 
 @Slf4j
@@ -21,13 +22,15 @@ public class ReceiveKafkaMessage {
 
     @Transactional
     @KafkaListener(topics = SHOP_TOPIC_EVENT_NAME, groupId = "report-update-report-group")
-    public void listenShopTopic(ShopDTO shopDTO) {
+    public void listenShopTopic(ShopDTO shopDTO, Acknowledgment acknowledgment) {
 
         try {
 
             log.info("Shop Report - Compra rcebida no tópico: {}", shopDTO.getIdentifier());
 
             repository.incrementShopStatus(shopDTO.getStatus());
+
+            acknowledgment.acknowledge();
 
         } catch (Exception ex) {
 

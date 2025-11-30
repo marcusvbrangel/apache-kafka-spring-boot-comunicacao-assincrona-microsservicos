@@ -5,6 +5,7 @@ import com.store.shop.model.Shop;
 import com.store.shop.repository.ShopRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.kafka.support.Acknowledgment;
 import org.springframework.stereotype.Service;
 
 @Slf4j
@@ -20,7 +21,7 @@ public class ReceiveKafkaMessage {
     }
 
     @KafkaListener(topics = SHOP_TOPIC_EVENT_NAME, groupId = "shop-save-status-group")
-    public void listenShopEvents(ShopDTO shopDTO) {
+    public void listenShopEvents(ShopDTO shopDTO, Acknowledgment acknowledgment) {
 
         try {
 
@@ -31,6 +32,8 @@ public class ReceiveKafkaMessage {
             shop.setStatus(shopDTO.getStatus());
 
             shopRepository.save(shop);
+
+            acknowledgment.acknowledge();
 
         } catch (Exception ex) {
 

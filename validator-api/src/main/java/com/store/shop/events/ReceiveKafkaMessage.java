@@ -7,6 +7,10 @@ import com.store.shop.repository.ProductRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.core.KafkaTemplate;
+import org.springframework.kafka.support.Acknowledgment;
+import org.springframework.kafka.support.KafkaHeaders;
+import org.springframework.messaging.Message;
+import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.stereotype.Service;
 
 @Slf4j
@@ -27,7 +31,7 @@ public class ReceiveKafkaMessage {
     }
 
     @KafkaListener(topics = SHOP_TOPIC_NAME, groupId = "validation-validate-shop-group")
-    public void listenShopTopic(ShopDTO shopDTO) {
+    public void listenShopTopic(ShopDTO shopDTO, Acknowledgment acknowledgment) {
 
         try {
 
@@ -51,6 +55,8 @@ public class ReceiveKafkaMessage {
                 shopSuccess(shopDTO);
             }
 
+            acknowledgment.acknowledge();
+
         } catch (Exception ex) {
             log.error("Erro no processamento da compra: {}", shopDTO.getIdentifier());
         }
@@ -59,21 +65,49 @@ public class ReceiveKafkaMessage {
 
     private void shopSuccess(ShopDTO shopDTO) {
 
-        log.info("Compra efetuada com sucesso: {}", shopDTO.getIdentifier());
+        try {
 
-        shopDTO.setStatus(SHOP_STATUS_SUCCESS);
+            log.info("Compra efetuada com sucesso: {}", shopDTO.getIdentifier());
 
-        kafkaTemplate.send(SHOP_TOPIC_EVENT_NAME, shopDTO);
+            shopDTO.setStatus(SHOP_STATUS_SUCCESS);
+
+            Message<ShopDTO> message = MessageBuilder
+                    .withPayload(shopDTO)
+                    .setHeader("source", "validator-api")
+                    .setHeader(KafkaHeaders.TOPIC, SHOP_TOPIC_EVENT_NAME)
+                    .setHeader(KafkaHeaders.TIMESTAMP, System.currentTimeMillis())
+                    .build();
+
+            kafkaTemplate.send(message);
+
+        } catch (Exception ex) {
+            log.error("Erro ao enviar mensagem para o kafka: {}", ex.getMessage());
+            throw new RuntimeException("Erro ao enviar mensagem para o kafka", ex);
+        }
 
     }
 
     private void shopError(ShopDTO shopDTO) {
 
-        log.info("Erro no processamento da compra: {}", shopDTO.getIdentifier());
+        try {
 
-        shopDTO.setStatus(SHOP_STATUS_ERROR);
+            log.info("Erro no processamento da compra: {}", shopDTO.getIdentifier());
 
-        kafkaTemplate.send(SHOP_TOPIC_EVENT_NAME, shopDTO);
+            shopDTO.setStatus(SHOP_STATUS_ERROR);
+
+            Message<ShopDTO> message = MessageBuilder
+                    .withPayload(shopDTO)
+                    .setHeader("source", "validator-api")
+                    .setHeader(KafkaHeaders.TOPIC, SHOP_TOPIC_EVENT_NAME)
+                    .setHeader(KafkaHeaders.TIMESTAMP, System.currentTimeMillis())
+                    .build();
+
+            kafkaTemplate.send(message);
+
+        } catch (Exception ex) {
+            log.error("Erro ao enviar mensagem para o kafka: {}", ex.getMessage());
+            throw new RuntimeException("Erro ao enviar mensagem para o kafka", ex);
+        }
 
     }
 
