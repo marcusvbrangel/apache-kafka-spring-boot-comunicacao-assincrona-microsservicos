@@ -14,7 +14,7 @@
         <module name="validator-api" />
         <module name="shop-api" />
       </profile>
-      <profile name="Annotation profile for report-api" enabled="true">
+      <profile name="Annotation profile for retry-api" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -22,12 +22,14 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
         </processorPath>
         <module name="report-api" />
+        <module name="retry-api" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="report-api" options="-parameters" />
+      <module name="retry-api" options="-parameters" />
       <module name="shop-api" options="-parameters" />
       <module name="validator-api" options="-parameters" />
     </option>

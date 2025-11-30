@@ -57,7 +57,7 @@ public class ReceiveKafkaMessage {
                 Product product = productRepository.findByIdentifier(item.getProductIdentifier());
 
                 if (!isValidShop(item, product)) {
-                    shopError(shopDTO);
+                    sendMessage(shopDTO, SHOP_STATUS_ERROR);
                     success = false;
                     break;
                 }
@@ -65,7 +65,7 @@ public class ReceiveKafkaMessage {
             }
 
             if (success) {
-                shopSuccess(shopDTO);
+                sendMessage(shopDTO, SHOP_STATUS_SUCCESS);
             }
 
             acknowledgment.acknowledge();
@@ -76,13 +76,17 @@ public class ReceiveKafkaMessage {
 
     }
 
-    private void shopSuccess(ShopDTO shopDTO) {
+    private void sendMessage(ShopDTO shopDTO, String status) {
 
         try {
 
-            log.info("Compra efetuada com sucesso: {}", shopDTO.getIdentifier());
-
-            shopDTO.setStatus(SHOP_STATUS_SUCCESS);
+            if (SHOP_STATUS_SUCCESS.equals(status)) {
+                log.info("Compra efetuada com sucesso: {}", shopDTO.getIdentifier());
+                shopDTO.setStatus(SHOP_STATUS_SUCCESS);
+            } else {
+                log.info("Erro no processamento da compra: {}", shopDTO.getIdentifier());
+                shopDTO.setStatus(SHOP_STATUS_ERROR);
+            }
 
             Message<ShopDTO> message = MessageBuilder
                     .withPayload(shopDTO)
@@ -93,29 +97,6 @@ public class ReceiveKafkaMessage {
 
             kafkaTemplate.send(message);
 
-        } catch (Exception ex) {
-            log.error("Erro ao enviar mensagem para o kafka: {}", ex.getMessage());
-            throw new RuntimeException("Erro ao enviar mensagem para o kafka", ex);
-        }
-
-    }
-
-    private void shopError(ShopDTO shopDTO) {
-
-        try {
-
-            log.info("Erro no processamento da compra: {}", shopDTO.getIdentifier());
-
-            shopDTO.setStatus(SHOP_STATUS_ERROR);
-
-            Message<ShopDTO> message = MessageBuilder
-                    .withPayload(shopDTO)
-                    .setHeader("source", "validator-api")
-                    .setHeader(KafkaHeaders.TOPIC, SHOP_TOPIC_EVENT_NAME)
-                    .setHeader(KafkaHeaders.TIMESTAMP, System.currentTimeMillis())
-                    .build();
-
-            kafkaTemplate.send(message);
 
         } catch (Exception ex) {
             log.error("Erro ao enviar mensagem para o kafka: {}", ex.getMessage());
