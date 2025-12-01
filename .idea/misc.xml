@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/validator-api/pom.xml" />
         <option value="$PROJECT_DIR$/report-api/pom.xml" />
         <option value="$PROJECT_DIR$/retry-api/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka-manager/pom.xml" />
       </list>
     </option>
   </component>
