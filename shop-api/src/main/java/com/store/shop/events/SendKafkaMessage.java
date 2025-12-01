@@ -10,13 +10,13 @@ import org.springframework.stereotype.Service;
 
 @Slf4j
 @Service
-public class KafkaClient {
+public class SendKafkaMessage {
 
     private final KafkaTemplate<String, ShopDTO> kafkaTemplate;
 
     private static final String SHOP_TOPIC_NAME = "SHOP_TOPIC";
 
-    public KafkaClient(KafkaTemplate<String, ShopDTO> kafkaTemplate) {
+    public SendKafkaMessage(KafkaTemplate<String, ShopDTO> kafkaTemplate) {
         this.kafkaTemplate = kafkaTemplate;
     }
 

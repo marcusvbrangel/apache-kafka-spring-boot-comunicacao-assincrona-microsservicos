@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="873c533b-da4f-468b-843e-77ea4e2cfb5b" name="Changes" comment="feat: implemented the KafkaAdmin application">
-      <change afterPath="$PROJECT_DIR$/docs/docker-images.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report-api/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retry-api/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shop-api/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/validator-api/Dockerfile" afterDir="false" />
+    <list default="true" id="873c533b-da4f-468b-843e-77ea4e2cfb5b" name="Changes" comment="chore: implemented the docker-compose.yaml file to facilitate up and run all of services zookeep, kafka, redpanda and all of microservices shop-api, validation-api and report-api">
+      <change afterPath="$PROJECT_DIR$/report-api/src/test/java/com/store/shop/events/ReceiveKafkaMessageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-api/src/test/java/com/store/shop/events/ReceiveKafkaMessageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-api/src/test/java/com/store/shop/events/SendKafkaMessageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/validator-api/src/test/java/com/store/shop/events/ReceiveKafkaMessageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kafka-manager/target/classes/com/store/shop/KafkaAdmin.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/kafka-manager/target/classes/com/store/shop/kafkaManagerApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/report-api/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report-api/target/classes/application.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/report-api/target/classes/com/store/shop/ReportApplication.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/report-api/target/classes/com/store/shop/controller/ReportController.class" beforeDir="false" />
@@ -26,7 +23,6 @@
       <change beforePath="$PROJECT_DIR$/report-api/target/classes/com/store/shop/repository/ReportRepository.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/report-api/target/classes/data.sql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/report-api/target/classes/schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/retry-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/retry-api/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/retry-api/target/classes/application.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/retry-api/target/classes/com/store/shop/RetryApplication.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/retry-api/target/classes/com/store/shop/dto/ShopDTO.class" beforeDir="false" />
@@ -35,31 +31,12 @@
       <change beforePath="$PROJECT_DIR$/retry-api/target/classes/com/store/shop/events/ReceiveKafkaMessage.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/retry-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/retry-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-api/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-api/target/classes/com/store/shop/ShopApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-api/target/classes/com/store/shop/constants/ShopStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-api/target/classes/com/store/shop/controller/ShopController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-api/target/classes/com/store/shop/dto/ShopDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-api/target/classes/com/store/shop/dto/ShopItemDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shop/controller/ShopController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shop/controller/ShopController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shop/events/KafkaClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/src/main/java/com/store/shop/events/SendKafkaMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/target/classes/com/store/shop/controller/ShopController.class" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/target/classes/com/store/shop/controller/ShopController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop-api/target/classes/com/store/shop/events/KafkaClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-api/target/classes/com/store/shop/events/KafkaConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-api/target/classes/com/store/shop/events/ReceiveKafkaMessage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-api/target/classes/com/store/shop/model/Shop.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-api/target/classes/com/store/shop/model/ShopItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-api/target/classes/com/store/shop/repository/ShopRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-api/target/classes/schema.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/validator-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validator-api/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/validator-api/target/classes/com/store/shop/ValidatorApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/validator-api/target/classes/com/store/shop/dto/ShopDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/validator-api/target/classes/com/store/shop/dto/ShopItemDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/validator-api/target/classes/com/store/shop/events/KafkaConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/validator-api/target/classes/com/store/shop/events/ReceiveKafkaMessage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/validator-api/target/classes/com/store/shop/model/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/validator-api/target/classes/com/store/shop/repository/ProductRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/validator-api/target/classes/data.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/validator-api/target/classes/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +49,7 @@
         <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -119,6 +97,10 @@
     "Application.kafkaManagerApplication.executor": "Debug",
     "Docker.docker-compose.yaml.redpanda-console: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yaml: Compose Deployment.executor": "Run",
+    "JUnit.KafkaClientTest.executor": "Run",
+    "JUnit.ReceiveKafkaMessageTest (1).executor": "Run",
+    "JUnit.ReceiveKafkaMessageTest.executor": "Run",
+    "JUnit.SendKafkaMessageTest.executor": "Run",
     "JUnit.ValidatorApplicationTests.executor": "Debug",
     "Maven.kafka-manager [clean].executor": "Run",
     "Maven.report-api [clean].executor": "Run",
@@ -158,6 +140,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/wolf/Documentos/desenvolvimento/casa-do-codigo/apache-kafka-spring-boot-comunicacao-assincrona-microsservicos/kafka-manager/pom.xml",
@@ -171,60 +155,14 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/docs" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.store.shop.events" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.kafkaManagerApplication">
-    <configuration name="ReportApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.store.shop.ReportApplication" />
-      <module name="report-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.store.shop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RetryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.store.shop.RetryApplication" />
-      <module name="retry-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.store.shop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ShopApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.store.shop.ShopApplication" />
-      <module name="shop-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.store.shop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ValidatorApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.store.shop.ValidatorApplication" />
-      <module name="validator-api" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.store.shop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ReceiveKafkaMessageTest (2)">
     <configuration name="ValidatorApplication02" type="Application" factoryName="Application">
       <envs>
         <env name="SERVER_PORT" value="8062" />
@@ -256,6 +194,66 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReceiveKafkaMessageTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="validator-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.store.shop.events.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.store.shop.events" />
+      <option name="MAIN_CLASS_NAME" value="com.store.shop.events.ReceiveKafkaMessageTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReceiveKafkaMessageTest (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="report-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.store.shop.events.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.store.shop.events" />
+      <option name="MAIN_CLASS_NAME" value="com.store.shop.events.ReceiveKafkaMessageTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReceiveKafkaMessageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shop-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.store.shop.events.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.store.shop.events" />
+      <option name="MAIN_CLASS_NAME" value="com.store.shop.events.ReceiveKafkaMessageTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SendKafkaMessageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shop-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.store.shop.events.SendKafkaMessageTest" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.store.shop.events" />
+      <option name="MAIN_CLASS_NAME" value="com.store.shop.events.SendKafkaMessageTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -275,18 +273,18 @@
       <item itemvalue="Application.ValidatorApplication02" />
       <item itemvalue="Application.ValidatorApplication03" />
       <item itemvalue="Application.kafkaManagerApplication" />
-      <item itemvalue="Application.RetryApplication" />
-      <item itemvalue="Application.ReportApplication" />
-      <item itemvalue="Application.ShopApplication" />
-      <item itemvalue="Application.ValidatorApplication" />
+      <item itemvalue="JUnit.ReceiveKafkaMessageTest" />
+      <item itemvalue="JUnit.ReceiveKafkaMessageTest (1)" />
+      <item itemvalue="JUnit.ReceiveKafkaMessageTest (2)" />
+      <item itemvalue="JUnit.SendKafkaMessageTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReceiveKafkaMessageTest (2)" />
+        <item itemvalue="JUnit.ReceiveKafkaMessageTest (1)" />
+        <item itemvalue="JUnit.ReceiveKafkaMessageTest" />
+        <item itemvalue="JUnit.SendKafkaMessageTest" />
         <item itemvalue="Application.kafkaManagerApplication" />
-        <item itemvalue="Application.RetryApplication" />
-        <item itemvalue="Application.ReportApplication" />
-        <item itemvalue="Application.ValidatorApplication" />
-        <item itemvalue="Application.ShopApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -362,7 +360,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764548748877</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="chore: implemented the docker-compose.yaml file to facilitate up and run all of services zookeep, kafka, redpanda and all of microservices shop-api, validation-api and report-api">
+      <option name="closed" value="true" />
+      <created>1764616537021</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1764616537021</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -372,7 +378,8 @@
     <MESSAGE value="feat: implemented partition key on all of producers" />
     <MESSAGE value="feat: implemented the microservice retry-api" />
     <MESSAGE value="feat: implemented the KafkaAdmin application" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: implemented the KafkaAdmin application" />
+    <MESSAGE value="chore: implemented the docker-compose.yaml file to facilitate up and run all of services zookeep, kafka, redpanda and all of microservices shop-api, validation-api and report-api" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: implemented the docker-compose.yaml file to facilitate up and run all of services zookeep, kafka, redpanda and all of microservices shop-api, validation-api and report-api" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

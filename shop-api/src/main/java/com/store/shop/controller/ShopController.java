@@ -2,7 +2,7 @@ package com.store.shop.controller;
 
 import com.store.shop.constants.ShopStatus;
 import com.store.shop.dto.ShopDTO;
-import com.store.shop.events.KafkaClient;
+import com.store.shop.events.SendKafkaMessage;
 import com.store.shop.model.Shop;
 import com.store.shop.repository.ShopRepository;
 import org.springframework.http.HttpStatus;
@@ -18,9 +18,9 @@ import java.util.UUID;
 public class ShopController {
 
     private final ShopRepository shopRepository;
-    private final KafkaClient kafkaClient;
+    private final SendKafkaMessage kafkaClient;
 
-    public ShopController(ShopRepository shopRepository, KafkaClient kafkaClient) {
+    public ShopController(ShopRepository shopRepository, SendKafkaMessage kafkaClient) {
         this.shopRepository = shopRepository;
         this.kafkaClient = kafkaClient;
     }

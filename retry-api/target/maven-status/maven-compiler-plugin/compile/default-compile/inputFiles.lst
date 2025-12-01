@@ -1,7 +1,0 @@
-/home/wolf/Documentos/desenvolvimento/casa-do-codigo/apache-kafka-spring-boot-comunicacao-assincrona-microsservicos/retry-api/src/main/java/com/store/shop/RetryApplication.java
-/home/wolf/Documentos/desenvolvimento/casa-do-codigo/apache-kafka-spring-boot-comunicacao-assincrona-microsservicos/retry-api/src/main/java/com/store/shop/constants/ShopStatus.java
-/home/wolf/Documentos/desenvolvimento/casa-do-codigo/apache-kafka-spring-boot-comunicacao-assincrona-microsservicos/retry-api/src/main/java/com/store/shop/dto/ShopDTO.java
-/home/wolf/Documentos/desenvolvimento/casa-do-codigo/apache-kafka-spring-boot-comunicacao-assincrona-microsservicos/retry-api/src/main/java/com/store/shop/dto/ShopItemDTO.java
-/home/wolf/Documentos/desenvolvimento/casa-do-codigo/apache-kafka-spring-boot-comunicacao-assincrona-microsservicos/retry-api/src/main/java/com/store/shop/events/KafkaClient.java
-/home/wolf/Documentos/desenvolvimento/casa-do-codigo/apache-kafka-spring-boot-comunicacao-assincrona-microsservicos/retry-api/src/main/java/com/store/shop/events/KafkaConfig.java
-/home/wolf/Documentos/desenvolvimento/casa-do-codigo/apache-kafka-spring-boot-comunicacao-assincrona-microsservicos/retry-api/src/main/java/com/store/shop/events/ReceiveKafkaMessage.java
