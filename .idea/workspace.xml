@@ -4,11 +4,62 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="873c533b-da4f-468b-843e-77ea4e2cfb5b" name="Changes" comment="feat: implemented the microservice retry-api">
-      <change afterPath="$PROJECT_DIR$/kafka-manager/src/main/java/com/store/shop/KafkaAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="873c533b-da4f-468b-843e-77ea4e2cfb5b" name="Changes" comment="feat: implemented the KafkaAdmin application">
+      <change afterPath="$PROJECT_DIR$/docs/docker-images.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report-api/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/retry-api/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop-api/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/validator-api/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-manager/target/classes/com/store/shop/KafkaAdmin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-manager/target/classes/com/store/shop/kafkaManagerApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/report-api/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-api/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-api/target/classes/com/store/shop/ReportApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-api/target/classes/com/store/shop/controller/ReportController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-api/target/classes/com/store/shop/dto/ShopDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-api/target/classes/com/store/shop/dto/ShopReportDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-api/target/classes/com/store/shop/events/KafkaConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-api/target/classes/com/store/shop/events/ReceiveKafkaMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-api/target/classes/com/store/shop/model/ShopReport.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-api/target/classes/com/store/shop/repository/ReportRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-api/target/classes/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report-api/target/classes/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/retry-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/retry-api/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retry-api/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/retry-api/target/classes/com/store/shop/RetryApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/retry-api/target/classes/com/store/shop/dto/ShopDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/retry-api/target/classes/com/store/shop/dto/ShopItemDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/retry-api/target/classes/com/store/shop/events/KafkaConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/retry-api/target/classes/com/store/shop/events/ReceiveKafkaMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/retry-api/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/retry-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/shop-api/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/target/classes/com/store/shop/ShopApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/target/classes/com/store/shop/constants/ShopStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/target/classes/com/store/shop/controller/ShopController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/target/classes/com/store/shop/dto/ShopDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/target/classes/com/store/shop/dto/ShopItemDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/target/classes/com/store/shop/events/KafkaClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/target/classes/com/store/shop/events/KafkaConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/target/classes/com/store/shop/events/ReceiveKafkaMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/target/classes/com/store/shop/model/Shop.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/target/classes/com/store/shop/model/ShopItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/target/classes/com/store/shop/repository/ShopRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shop-api/target/classes/schema.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/validator-api/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/target/classes/com/store/shop/ValidatorApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/target/classes/com/store/shop/dto/ShopDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/target/classes/com/store/shop/dto/ShopItemDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/target/classes/com/store/shop/events/KafkaConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/target/classes/com/store/shop/events/ReceiveKafkaMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/target/classes/com/store/shop/model/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/target/classes/com/store/shop/repository/ProductRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/target/classes/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/validator-api/target/classes/schema.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +161,7 @@
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/wolf/Documentos/desenvolvimento/casa-do-codigo/apache-kafka-spring-boot-comunicacao-assincrona-microsservicos/kafka-manager/pom.xml",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel"
@@ -295,7 +346,23 @@
       <option name="project" value="LOCAL" />
       <updated>1764531056751</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: implemented the KafkaAdmin application">
+      <option name="closed" value="true" />
+      <created>1764548661510</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1764548661510</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: implemented the KafkaAdmin application">
+      <option name="closed" value="true" />
+      <created>1764548748877</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1764548748877</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -304,7 +371,8 @@
     <MESSAGE value="feat: implemented manual commit on all of consumers" />
     <MESSAGE value="feat: implemented partition key on all of producers" />
     <MESSAGE value="feat: implemented the microservice retry-api" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: implemented the microservice retry-api" />
+    <MESSAGE value="feat: implemented the KafkaAdmin application" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: implemented the KafkaAdmin application" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

@@ -1,0 +1,66 @@
+
+---------------------------------------------------------------------
+
+FROM eclipse-temurin:21-jre-alpine
+VOLUME /tmp
+ARG JAR_FILE=target/shop-api-0.0.1-SNAPSHOT.jar
+COPY ${JAR_FILE} app.jar
+EXPOSE 8051
+ENTRYPOINT ["java","-jar","/app.jar"]
+
+---------------------------------------------------------------------
+
+docker image build -t marcusvbrangel/shop-api:latest .
+
+docker image build -t marcusvbrangel/validator-api:latest .
+
+docker image build -t marcusvbrangel/report-api:latest .
+
+docker image build -t marcusvbrangel/retry-api:latest .
+
+---------------------------------------------------------------------
+
+docker image ls
+                                                                                                                                                                                                i Info →   U  In Use
+IMAGE                                             ID             DISK USAGE   CONTENT SIZE   EXTRA
+marcusvbrangel/report-api:latest                  aed5214d0fa2        280MB             0B
+marcusvbrangel/retry-api:latest                   6ebd7784f035        248MB             0B
+marcusvbrangel/shop-api:latest                    c0a798ed9046        280MB             0B
+marcusvbrangel/validator-api:latest               7d5499ea82f7        280MB             0B
+
+
+---------------------------------------------------------------------
+
+Status dos Serviços:
+
+  ✅ zookeeper         - Healthy
+  ✅ kafka             - Healthy
+  ✅ redpanda-console  - Running
+  ✅ shop-api          - Running (aguardando Kafka saudável)
+  ✅ validation-api    - Running (aguardando Kafka saudável)
+  ✅ report-api        - Running (aguardando Kafka saudável)
+  ✅ retry-api         - Running (aguardando Kafka saudável)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

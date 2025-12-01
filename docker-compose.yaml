@@ -4,25 +4,22 @@ services:
   zookeeper:
     image: confluentinc/cp-zookeeper:7.5.0
     container_name: zookeeper
+    ports:
+      - "2181:2181"
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
       ZOOKEEPER_TICK_TIME: 2000
-    ports:
-      - "2181:2181"
-    networks:
-      - kafka-network
     healthcheck:
       test: ["CMD", "echo", "ruok", "|", "nc", "localhost", "2181"]
       interval: 10s
       timeout: 5s
       retries: 5
+    networks:
+      - kafka-network
 
   kafka:
     image: confluentinc/cp-kafka:7.5.0
     container_name: kafka
-    depends_on:
-      zookeeper:
-        condition: service_healthy
     ports:
       - "9092:9092"
     environment:
@@ -35,20 +32,96 @@ services:
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
       KAFKA_NUM_PARTITIONS: 3
       KAFKA_ENABLE_AUTO_COMMIT: "false"
+    depends_on:
+      zookeeper:
+        condition: service_healthy
+    healthcheck:
+      test: kafka-broker-api-versions --bootstrap-server localhost:9092
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 40s
     networks:
       - kafka-network
 
   redpanda-console:
     image: redpandadata/console:latest
     container_name: redpanda-console
-    depends_on:
-      - kafka
     ports:
       - "8089:8080"
     environment:
       KAFKA_BROKERS: "kafka:29092"
+    depends_on:
+      kafka:
+        condition: service_healthy
     networks:
       - kafka-network
+
+  shop-api:
+    build:
+      context: ./shop-api
+      dockerfile: Dockerfile
+    container_name: shop-api
+    ports:
+      - "8051:8051"
+    environment:
+      KAFKA_BOOTSTRAP_ADDRESS: "kafka:29092"
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: "kafka:29092"
+    depends_on:
+      kafka:
+        condition: service_healthy
+    networks:
+      - kafka-network
+
+  validation-api:
+    build:
+      context: ./validator-api
+      dockerfile: Dockerfile
+    container_name: validation-api
+    ports:
+      - "8052:8052"
+    environment:
+      KAFKA_BOOTSTRAP_ADDRESS: "kafka:29092"
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: "kafka:29092"
+    depends_on:
+      kafka:
+        condition: service_healthy
+    networks:
+      - kafka-network
+
+  report-api:
+    build:
+      context: ./report-api
+      dockerfile: Dockerfile
+    container_name: report-api
+    ports:
+      - "8053:8053"
+    environment:
+      KAFKA_BOOTSTRAP_ADDRESS: "kafka:29092"
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: "kafka:29092"
+    depends_on:
+      kafka:
+        condition: service_healthy
+    networks:
+      - kafka-network
+
+  retry-api:
+    build:
+      context: ./retry-api
+      dockerfile: Dockerfile
+    container_name: retry-api
+    ports:
+      - "8054:8054"
+    environment:
+      KAFKA_BOOTSTRAP_ADDRESS: "kafka:29092"
+      SPRING_KAFKA_BOOTSTRAP_SERVERS: "kafka:29092"
+    depends_on:
+      kafka:
+        condition: service_healthy
+    networks:
+      - kafka-network
+    profiles: # nao inicia junto com o docker compose up...
+      - manual
 
 networks:
   kafka-network:
